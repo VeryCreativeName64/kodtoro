@@ -1,0 +1,28 @@
+export default class Jatek{
+    #szinekLista=[]
+    #generaltLista=[]
+    #visszajelzesListaM=[]
+    #tippLista=[]
+    #sor
+    #oszlop
+    #szin1Elem
+    #szin2Elem
+    #szin3Elem
+    #szin4Elem
+    #szin5Elem
+    #szin6Elem
+    constructor(){
+    this.#szinekLista
+    this.#generaltLista
+    this.#visszajelzesListaM
+    this.#tippLista
+    this.#sor
+    this.#oszlop
+    this.#szin1Elem
+    this.#szin2Elem
+    this.#szin3Elem
+    this.#szin4Elem
+    this.#szin5Elem
+    this.#szin6Elem
+    }
+}
