@@ -8,12 +8,15 @@ export default class JatekSor{
     constructor(tippLista,visszajelzesLista,szElem){
         this.#tippLista=tippLista
         this.#visszajelzesLista=visszajelzesLista
-        this.szElem = szElem;
+        this.#szElem = szElem;
+        
         this.#megjelenit()
     }
     #megjelenit(){
         let html=`<div class="jateksor"> </div>`;
+        console.log(this.#szElem)
         this.#szElem.insertAdjacentHTML("beforeend",html);
+        
         this.sorSzuloElem = document.querySelector(".jatekter .jateksor:last-child");
         new Visszajelzes(this.#visszajelzesLista,this.sorSzuloElem)
         new Tipp(this.#tippLista,this.sorSzuloElem)

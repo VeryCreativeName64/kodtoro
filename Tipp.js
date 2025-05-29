@@ -1,7 +1,7 @@
 export default class Tipp{
     #tippLista=[]
     #szElem
-    constructor(tippLista){
+    constructor(tippLista,szElem){
         this.#tippLista=tippLista
         this.#szElem = szElem;
         this.#megjelenit()
