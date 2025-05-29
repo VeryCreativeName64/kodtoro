@@ -3,6 +3,18 @@ export default class Tipp{
     #szElem
     constructor(tippLista){
         this.#tippLista=tippLista
-        this.#szElem
+        this.#szElem = szElem;
+        this.#megjelenit()
     }
+
+    #megjelenit() {
+        let html = `<div class="sor">
+                      <div class="elem" style="background-color:${this.#tippLista[0]}"}></div>
+                      <div class="elem" style="background-color:${this.#tippLista[1]}"}></div>
+                      <div class="elem" style="background-color:${this.#tippLista[2]}"}></div>
+                      <div class="elem" style="background-color:${this.#tippLista[3]}"}></div>
+                    </div>`;
+    
+        this.#szElem.insertAdjacentHTML("beforeend", html);
+      }
 }
