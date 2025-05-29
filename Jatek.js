@@ -19,6 +19,7 @@ export default class Jatek {
     this.megjelenit();
   }
   megjelenit() {
+    new Generalt(this.#generaltLista)
     for (let index = 0; index < 10; index++) {
       new JatekSor(
         this.#visszajelzesListaM[index],
@@ -27,5 +28,7 @@ export default class Jatek {
       );
     }
   }
-  generaltListaEloallit() {}
+  generaltListaEloallit() {
+    
+  }
 }
