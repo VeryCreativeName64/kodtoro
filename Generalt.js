@@ -5,5 +5,6 @@ export default class Generalt{
     constructor(generaltLista,szElem){
         this.#generaltLista=generaltLista
         this.#szElem=szElem
+        
     }
 }

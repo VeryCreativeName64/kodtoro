@@ -16,6 +16,7 @@ export default class Jatek {
 
   constructor() {
     this.#jatekter = document.querySelector(".jatekter");
+    this.generaltListaEloallit()
     this.megjelenit();
   }
   megjelenit() {
@@ -29,6 +30,8 @@ export default class Jatek {
     }
   }
   generaltListaEloallit() {
-    
+    let szinLista = [...this.#szinekLista]
+    szinLista.sort(()=>Math.random( - 0.5)
+)
   }
 }
